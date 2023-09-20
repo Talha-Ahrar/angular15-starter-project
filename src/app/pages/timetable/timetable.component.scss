@@ -1,0 +1,62 @@
+/* styles.scss */
+
+/* ... (previous styles) ... */
+
+.timetable-card {
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+
+  /* Additional styles for the timetable card */
+  background-color: #f5f5f5; /* Background color */
+  padding: 16px; /* Padding for better visual separation */
+}
+
+.timetable-card mat-card-content {
+  padding: 20px;
+}
+
+.timetable {
+  width: 100%;
+
+  th.mat-header-cell,
+  td.mat-cell {
+    font-size: 16px;
+    text-align: center;
+    padding: 8px;
+  }
+
+  th.mat-header-cell {
+    background-color: #f0f0f0;
+    font-weight: bold; /* Make course name bold */
+    font-size: 14px; /* Increase the font size of course names (adjust as needed) */
+  }
+
+  td.mat-cell {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    font-size: 16px; /* Increase the font size of cell titles (adjust as needed) */
+  }
+
+  td.mat-cell:hover {
+    background-color: #f9f9f9;
+  }
+}
+
+.profile-card {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.profile-header {
+  text-align: center;
+}
+
+.profile-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* ... (previous styles) ... */

@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+// Define custom colors
+$custom-body-color: #ebebeb;  // Background color
+  // Text color
+
+body {
+  background-color: $custom-body-color;
+  // color: white;
+}
+
+// You can also define styles for specific elements or classes using these colors
+// .custom-element {
+//   background-color: $custom-body-color;
+//   color: $custom-text-color;
+// }
+
+// .another-element {
+//   background-color: #FFB7B7;  // Another custom background color
+//   color: #F4EEEE;            // Another custom text color
+// }

@@ -1,0 +1,93 @@
+/* styles.scss */
+
+/* Define a mixin for common styles */
+@mixin menu-item {
+  color: #d4d4d4;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  transition: all 0.3s;
+
+  .menu-icon {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+
+  .menu-text {
+    // font-weight: bold;
+  }
+}
+
+.sidebar {
+  // box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  background-color: #322653;
+  width: 200px;
+  padding: 20px;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  // border-radius: 10%;
+  overflow-x: hidden;
+  margin-top: 48px;
+  // transition: transform 0.3s;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar li a {
+  @include menu-item;
+
+  &:hover {
+    // box-shadow: 0px 0px 20px rgba(0, 0, 255, 0.5);
+    background-color: rgb(241, 241, 241);
+    color: #6c6c6c;
+
+  }
+
+  &.active {
+    color: #000000;
+    // box-shadow: 3px 3px 5px #b9b9b9, -3px -3px 5px #ffffff;
+    background-color: rgb(241, 241, 241);
+
+
+    // border-radius: 5%;
+  }
+
+  &.active:hover {
+    // color: #ffffff;
+
+    // box-shadow: 4px 4px 6px #b9b9b9, -4px -4px 6px #ffffff;
+    // background-color: #d5d5d5;
+  }
+}
+
+.sub-menu {
+  padding-left: 20px; /* Adjust the value to your desired padding */
+}
+
+
+
+
+
+.hideSidebar {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+/* Define the final state when showing */
+.showSidebar {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 0.3s, opacity 0.3s;
+}

@@ -1,0 +1,74 @@
+/* Your global styles.scss or a component-specific SCSS file */
+.container {
+  display: flex;
+  height: 100vh;
+
+}
+
+
+
+.container {
+  display: flex;
+  flex-direction: column; /* Arrange children vertically */
+  height: 100vh;
+}
+
+.app-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 1000; /* Ensure the header is above other content */
+}
+
+.app-sidenav {
+  flex: 0 0 250px; /* Fixed width for the sidebar */
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+.content {
+  position: fixed;
+  top: 80px; /* Adjust this value to match the height of your header */
+  /* Adjust this value to match the width of your sidebar */
+  right: 0;
+  bottom: 0;
+
+  overflow-y: auto;
+  z-index: 999; /* Ensure the content is above the sidebar */
+}
+
+
+
+.content {
+  flex: 1;
+  // padding: 20px;
+  // overflow-y: auto;
+  // margin-left: 250px;
+  // transition: margin-left 0.3s ease; /* Add a transition for smooth animation */
+}
+
+/* Style content differently when sidebar is hidden */
+.content.content-with-sidebar {
+  margin-left: 0;
+}
+
+
+.with-sidebar {
+  left: 250px;
+  padding: 3px;
+  transition: left 0.3s ease, padding-left 0.3s ease; /* Add transitions for left and padding changes */
+}
+
+/* Remove padding when the sidebar is hidden */
+.without-sidebar {
+  left: 25px;
+  padding: 3px;
+  transition: left 0.3s ease, padding-left 0.3s ease; /* Add transitions for left and padding changes */
+}
+
+/* Additional styling to make it visually appealing */
+
+

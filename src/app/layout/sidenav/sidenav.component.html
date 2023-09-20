@@ -1,0 +1,49 @@
+<div class="sidebar" [ngClass]="{ 'showSidebar': isSidebarVisible, 'hideSidebar': !isSidebarVisible }" [@fadeInOut]>
+    <ul>
+      <li>
+        <a routerLinkActive="active" (click)="toggleSubmenu()">
+          <span class="menu-icon material-icons">dashboard</span>
+          <span class="menu-text">Dashboard</span>
+          <span class="sub-menu-icon" [ngClass]="{ 'sub-menu-open': isSubmenuOpen }">
+            <mat-icon>{{ isSubmenuOpen ? 'keyboard_arrow_down' : 'keyboard_arrow_right' }}</mat-icon>
+          </span>
+        </a>
+        <!-- Sub-menu for Dashboard with left padding -->
+        <ul *ngIf="isSubmenuOpen" class="sub-menu">
+          <li><a routerLink="/dashboard" routerLinkActive="active"><span class="menu-icon material-icons">details</span><span class="menu-text">Details</span></a></li>
+          <li><a routerLink="/dashboard/messages" routerLinkActive="active"><span class="menu-icon material-icons">message</span><span class="menu-text">Messages</span></a></li>
+        </ul>
+      </li>
+      <li>
+        <a routerLink="/home" routerLinkActive="active">
+          <span class="menu-icon material-icons">grade</span>
+          <span class="menu-text">Home</span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/grades" routerLinkActive="active">
+          <span class="menu-icon material-icons">grade</span>
+          <span class="menu-text">Grade</span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/schedule" routerLinkActive="active">
+          <span class="menu-icon material-icons">schedule</span>
+          <span class="menu-text">Schedule</span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/timetable" routerLinkActive="active">
+          <span class="menu-icon material-icons">access_time</span>
+          <span class="menu-text">Time Table</span>
+        </a>
+      </li>
+      <li>
+        <a routerLink="/settings" routerLinkActive="active">
+          <span class="menu-icon material-icons">settings</span>
+          <span class="menu-text">Setting</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+

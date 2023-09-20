@@ -1,0 +1,28 @@
+<mat-card class="timetable-card">
+  <mat-card-header>
+    <div class="profile-header">
+      <h1 class="profile-title">Time Table</h1>
+
+
+    </div>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-table [dataSource]="courses" class="timetable">
+      <!-- Course Number Column -->
+      <ng-container matColumnDef="courseNumber">
+        <mat-header-cell *matHeaderCellDef>Course</mat-header-cell>
+        <mat-cell *matCellDef="let course">{{ course }}</mat-cell>
+      </ng-container>
+
+      <!-- Class Name Columns (Course 1 to Course 12) -->
+      <ng-container *ngFor="let class of classes" [matColumnDef]="class">
+        <mat-header-cell *matHeaderCellDef>{{ class }}</mat-header-cell>
+        <mat-cell *matCellDef="let course">{{ getRandomTime() }}</mat-cell>
+      </ng-container>
+
+      <!-- Define Columns -->
+      <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+  </mat-card-content>
+</mat-card>
