@@ -24,7 +24,6 @@ import { RouterLinkActiveExactDirective } from './main/appRouterLinkActiveExact.
 import { ProfileComponent } from './pages/profile/profile.component';
 import { MatCardModule } from '@angular/material/card';
 import { FormsModule } from '@angular/forms';
-import { TimetableComponent } from './pages/timetable/timetable.component';
 
 // Import FormsModule
 @NgModule({
@@ -37,7 +36,6 @@ import { TimetableComponent } from './pages/timetable/timetable.component';
     MainComponent,
     RouterLinkActiveExactDirective,
     ProfileComponent,
-    TimetableComponent,
   ],
   imports: [
     BrowserModule,

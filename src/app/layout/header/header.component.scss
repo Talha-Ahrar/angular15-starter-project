@@ -25,16 +25,16 @@
 //   box-shadow: 5px 5px 10px #b9b9b9, -5px -5px 10px #ffffff; /* Neumorphism shadow */
 // }
 .custom-toolbar{
-  background-color: #322653;
+  background-color: white;
 
 
 }
 .mat-toolbar{
-  color: #f0f0f0 !important;
+  color: black !important;
 }
 .mat-icon-button {
-  color: #f0f0f0 !important;
-  background-color: #f0f0f0; /* Background color of the button */
+  color: black !important;
+  background-color: black; /* Background color of the button */
   border-radius: 50%; /* Make the button round */
   width: 40px; /* Adjust the button width as needed */
   height: 40px; /* Adjust the button height as needed */
@@ -49,7 +49,7 @@
 
 /* Style the button with the "neumorphic-button" class */
 .neumorphic-button {
-  color: white;
+  color: black;
  /* Background color of the button */
   border-radius: 10px; /* Adjust the border-radius for a softer look */
   // box-shadow: 5px 5px 10px #b9b9b9, -5px -5px 10px #ffffff; /* Neumorphism shadow for the specific button */
@@ -69,7 +69,7 @@
 
 /* Adjust the button text color if needed */
 .neumorphic-button {
-  color: white !important; /* Text color */
+  color: black !important; /* Text color */
 }
 
 
@@ -81,7 +81,7 @@
 
 
 .notification-icon {
-  color: #f0f0f0 !important;
+  color: black !important;
   transition: transform 0.2s ease; /* Add smooth transition effect */
 
   &:hover {
@@ -95,5 +95,5 @@ body {
 }
 
 .mat-mdc-icon-button{
-  color: white !important;
+  color: black !important;
 }
