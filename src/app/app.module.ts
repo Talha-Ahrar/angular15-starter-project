@@ -24,6 +24,8 @@ import { RouterLinkActiveExactDirective } from './main/appRouterLinkActiveExact.
 import { ProfileComponent } from './pages/profile/profile.component';
 import { MatCardModule } from '@angular/material/card';
 import { FormsModule } from '@angular/forms';
+import { DataService } from './data.service';
+import { LoginComponent } from './_components/login/login.component';
 
 // Import FormsModule
 @NgModule({
@@ -36,6 +38,7 @@ import { FormsModule } from '@angular/forms';
     MainComponent,
     RouterLinkActiveExactDirective,
     ProfileComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,7 +56,7 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
     MatTableModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
