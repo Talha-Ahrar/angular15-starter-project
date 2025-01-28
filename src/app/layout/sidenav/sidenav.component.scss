@@ -2,7 +2,7 @@
 
 /* Define a mixin for common styles */
 @mixin menu-item {
-  color: #d4d4d4;
+  color: black;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -13,6 +13,7 @@
   .menu-icon {
     font-size: 24px;
     margin-right: 10px;
+    font-weight: 600;
   }
 
   .menu-text {
@@ -22,7 +23,7 @@
 
 .sidebar {
   // box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  background-color: #322653;
+  background-color: white;
   width: 200px;
   padding: 20px;
   position: fixed;
@@ -50,15 +51,14 @@
   &:hover {
     // box-shadow: 0px 0px 20px rgba(0, 0, 255, 0.5);
     background-color: rgb(241, 241, 241);
-    color: #6c6c6c;
+
 
   }
 
   &.active {
-    color: #000000;
+    color: #0000cd;
     // box-shadow: 3px 3px 5px #b9b9b9, -3px -3px 5px #ffffff;
     background-color: rgb(241, 241, 241);
-
 
     // border-radius: 5%;
   }
